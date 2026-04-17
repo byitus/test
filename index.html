@@ -1,0 +1,1228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>AASI Multispeciality Hospital - Ramanathapuram</title>
+<meta name="description" content="AASI Multispeciality Hospital in Ramanathapuram offering 24/7 emergency care, ICU, dialysis, diagnostics, and specialist departments.">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#0a1a12">
+<link rel="canonical" href="https://your-domain.netlify.app/">
+<meta property="og:title" content="AASI Multispeciality Hospital">
+<meta property="og:description" content="24/7 emergency care and multispeciality hospital services in Ramanathapuram.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-domain.netlify.app/">
+<meta property="og:image" content="https://your-domain.netlify.app/assets/img/aasi-hospital-building.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AASI Multispeciality Hospital">
+<meta name="twitter:description" content="24/7 emergency care and multispeciality hospital services in Ramanathapuram.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap"></noscript>
+<style>
+/* ============================
+   RESET & VARIABLES
+============================= */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'DM Sans',sans-serif;background:#f7f4ee;color:#1a2e22;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+:root{
+  --em:#0a5c3e;--em2:#0e7a53;--em3:#14a06b;--glow:#1fd68a;
+  --gold:#c8a96e;--cream:#f7f4ee;--white:#fff;
+  --dark:#0a1a12;--dark2:#112218;--txt:#1a2e22;--muted:#6b8f78;
+  --glass:rgba(255,255,255,.08);--gb:rgba(255,255,255,.14);
+  --radius:20px;--shadow:0 8px 40px rgba(10,92,62,.12);
+}
+
+/* ============================
+   GLOBAL
+============================= */
+.skip-link{position:absolute;left:16px;top:-48px;background:#0a1a12;color:#fff;padding:12px 16px;border-radius:10px;text-decoration:none;z-index:20000;transition:top .2s}
+.skip-link:focus{top:16px}
+section:not(#hero){content-visibility:auto;contain-intrinsic-size:1px 900px}
+
+/* ============================
+   CURSOR
+============================= */
+.cur{position:fixed;width:8px;height:8px;background:var(--glow);border-radius:50%;pointer-events:none;z-index:99999;mix-blend-mode:exclusion;transform:translate(-50%,-50%);transition:transform .1s}
+.cur-ring{position:fixed;width:36px;height:36px;border:1.5px solid var(--em3);border-radius:50%;pointer-events:none;z-index:99998;transform:translate(-50%,-50%);transition:width .3s,height .3s,border-color .3s,opacity .3s}
+.cur-ring.h{width:56px;height:56px;opacity:.5;border-color:var(--glow)}
+.cur,.cur-ring{display:none}
+@media(pointer:fine) and (hover:hover){body{cursor:none}.cur,.cur-ring{display:block}}
+@media(hover:none),(pointer:coarse){.cur,.cur-ring{display:none!important}}
+
+/* ============================
+   NAV
+============================= */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:72px;padding:0 4%;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  transition:all .4s;
+}
+nav.sc{
+  background:rgba(10,26,18,.96);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(31,214,138,.1);
+  height:60px;
+  box-shadow:0 4px 24px rgba(0,0,0,.3);
+}
+.nlogo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.nlogo-icon{width:40px;height:40px;border-radius:10px;overflow:hidden;flex-shrink:0}
+.nlogo-icon img{width:100%;height:100%;object-fit:cover}
+.nlogo-text .brand{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:#fff;display:block;line-height:1.15;letter-spacing:.03em}
+.nlogo-text .sub{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--glow);display:block}
+.nlinks{display:flex;align-items:center;gap:2px;flex-wrap:nowrap}
+.nl{color:rgba(255,255,255,.72);text-decoration:none;font-size:12.5px;font-weight:500;padding:7px 12px;border-radius:8px;white-space:nowrap;transition:color .2s}
+.nl:hover,.nl.active{color:#fff}
+.book-btn{background:linear-gradient(135deg,var(--glow),var(--em3))!important;color:var(--dark)!important;font-weight:600!important;padding:9px 18px!important;border-radius:10px!important;box-shadow:0 4px 16px rgba(31,214,138,.3);white-space:nowrap}
+.book-btn:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(31,214,138,.5)!important}
+/* hamburger */
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:6px;background:none;border:none;flex-shrink:0}
+.ham span{width:22px;height:2px;background:#fff;border-radius:2px;display:block;transition:all .3s}
+/* mobile drawer */
+.mob-menu{
+  display:none;
+  position:fixed;top:60px;left:0;right:0;
+  background:rgba(10,26,18,.98);
+  backdrop-filter:blur(20px);
+  padding:16px;
+  flex-direction:column;gap:4px;
+  z-index:999;
+  border-bottom:1px solid rgba(31,214,138,.1);
+}
+.mob-menu.open{display:flex}
+.mob-menu .nl{padding:12px 16px;border-radius:10px;font-size:14px}
+.mob-menu .book-btn{margin-top:8px;text-align:center;display:block}
+
+/* ============================
+   HERO
+============================= */
+#hero{
+  min-height:100vh;
+  min-height:100svh;
+  min-height:100dvh;
+  background:var(--dark);
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  overflow:hidden;
+  padding:0;
+}
+.h-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 70% at 70% 50%,rgba(14,122,83,.15) 0%,transparent 60%),linear-gradient(160deg,#061410 0%,#0a1a12 40%,#0d2318 100%)}
+.h-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(31,214,138,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(31,214,138,.03) 1px,transparent 1px);background-size:55px 55px}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);pointer-events:none}
+.o1{width:500px;height:500px;background:radial-gradient(circle,rgba(20,160,107,.35),transparent 70%);top:-10%;right:0%;opacity:.4;animation:orbF 9s ease-in-out infinite}
+.o2{width:320px;height:320px;background:radial-gradient(circle,rgba(14,122,83,.4),transparent 70%);bottom:15%;left:5%;opacity:.3;animation:orbF 9s ease-in-out infinite 3s}
+@keyframes orbF{0%,100%{transform:translateY(0)}50%{transform:translateY(-28px)}}
+.h-inner{
+  position:relative;z-index:2;
+  width:100%;max-width:1200px;
+  margin:0 auto;
+  padding:100px 5% 220px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+.h-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(31,214,138,.1);border:1px solid rgba(31,214,138,.2);color:var(--glow);padding:7px 16px;border-radius:50px;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px;animation:fsu .8s ease both}
+.h-dot{width:6px;height:6px;background:var(--glow);border-radius:50%;animation:pulse 2s ease-in-out infinite;flex-shrink:0}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+.h-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.8rem,4.5vw,5.2rem);font-weight:300;line-height:1.06;color:#fff;margin-bottom:20px;animation:fsu .9s .1s ease both}
+.h-title em{font-style:italic;color:var(--glow);display:block}
+.h-title strong{font-weight:600;display:block}
+.h-desc{font-size:1rem;line-height:1.75;color:rgba(255,255,255,.58);max-width:460px;margin-bottom:36px;font-weight:300;animation:fsu .9s .2s ease both}
+.h-acts{display:flex;gap:14px;flex-wrap:wrap;animation:fsu .9s .3s ease both}
+/* hero visual */
+.h-visual{position:relative}
+.h-card{background:var(--glass);border:1px solid var(--gb);border-radius:22px;overflow:hidden;box-shadow:0 24px 60px rgba(0,0,0,.5)}
+.h-card img{width:100%;height:300px;object-fit:cover;filter:brightness(.82)}
+.h-card-foot{padding:18px 22px;background:linear-gradient(to top,rgba(10,28,18,.9),transparent);margin-top:-70px;position:relative}
+.h-tag{display:inline-flex;align-items:center;gap:5px;background:rgba(31,214,138,.15);border:1px solid rgba(31,214,138,.3);color:var(--glow);padding:4px 12px;border-radius:50px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.h-card-foot p{color:#fff;font-size:1rem;font-family:'Cormorant Garamond',serif;font-weight:500}
+.h-fc{position:absolute;background:rgba(10,28,18,.9);border:1px solid rgba(31,214,138,.25);border-radius:14px;padding:12px 16px;backdrop-filter:blur(16px);display:flex;align-items:center;gap:10px;box-shadow:0 12px 32px rgba(0,0,0,.4);white-space:nowrap}
+.h-fc1{top:-20px;left:-24px;animation:fcF 6s ease-in-out infinite}
+.h-fc2{bottom:16px;right:-20px;animation:fcF 6s ease-in-out infinite 2s}
+@keyframes fcF{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.h-fc-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--em3),var(--em2));border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.h-fc strong{display:block;color:#fff;font-size:.82rem;font-weight:600}
+.h-fc span{color:var(--glow);font-size:.72rem}
+/* hero stats bar */
+.h-stats{
+  position:absolute;bottom:0;left:0;right:0;z-index:2;
+  background:rgba(10,26,18,.85);
+  backdrop-filter:blur(16px);
+  border-top:1px solid rgba(31,214,138,.12);
+}
+.h-stats-inner{
+  max-width:1200px;margin:0 auto;padding:0 5%;
+  display:grid;grid-template-columns:repeat(4,1fr);
+}
+.h-stat{
+  padding:20px 12px;
+  text-align:center;
+  border-right:1px solid rgba(255,255,255,.08);
+}
+.h-stat:last-child{border-right:none}
+.h-stat-n{font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:600;color:var(--glow);display:block;line-height:1}
+.h-stat-l{font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-top:5px;display:block}
+/* scroll indicator */
+.scroll-ind{position:absolute;bottom:90px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:6px;color:rgba(255,255,255,.3);font-size:.65rem;letter-spacing:.15em;text-transform:uppercase;z-index:2;animation:fadeIn 2s 1.5s both}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(31,214,138,.5),transparent);animation:sl 2s ease-in-out infinite}
+@keyframes sl{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform:scaleY(1);transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+@keyframes fsu{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* ============================
+   SECTIONS COMMON
+============================= */
+section{padding:100px 5%}
+.sec-inner{max-width:1200px;margin:0 auto}
+.sh{text-align:center;margin-bottom:64px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;color:var(--em3);font-size:.72rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;margin-bottom:14px}
+.eyebrow::before,.eyebrow::after{content:'';width:32px;height:1px}
+.eyebrow::before{background:linear-gradient(to right,transparent,currentColor)}
+.eyebrow::after{background:linear-gradient(to left,transparent,currentColor)}
+.stitle{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,3.5vw,3.4rem);font-weight:300;line-height:1.12;color:var(--txt)}
+.stitle em{font-style:italic;color:var(--em2)}
+.sdesc{font-size:.98rem;color:var(--muted);max-width:520px;margin:14px auto 0;line-height:1.75;font-weight:300}
+
+/* ============================
+   BUTTONS
+============================= */
+.btn-p{background:linear-gradient(135deg,var(--glow),var(--em3));color:var(--dark);font-weight:600;font-size:.88rem;letter-spacing:.03em;padding:14px 30px;border-radius:12px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .3s;box-shadow:0 4px 20px rgba(31,214,138,.3);border:none;cursor:pointer;white-space:nowrap}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(31,214,138,.5)}
+.btn-g{border:1.5px solid rgba(255,255,255,.2);color:rgba(255,255,255,.82);font-size:.88rem;font-weight:500;padding:13px 28px;border-radius:12px;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all .3s;cursor:pointer;background:transparent;white-space:nowrap}
+.btn-g:hover{border-color:rgba(31,214,138,.5);color:var(--glow);background:rgba(31,214,138,.06)}
+
+/* ============================
+   ABOUT
+============================= */
+#about{background:var(--cream)}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;max-width:1200px;margin:0 auto}
+.a-img-wrap{position:relative}
+.a-img{border-radius:22px;overflow:hidden;box-shadow:0 24px 70px rgba(10,92,62,.18)}
+.a-img img{width:100%;height:440px;object-fit:cover;transition:transform .6s}
+.a-img:hover img{transform:scale(1.03)}
+.a-accent{position:absolute;bottom:-24px;right:-20px;background:linear-gradient(135deg,var(--em),var(--em2));color:#fff;border-radius:18px;padding:24px 28px;box-shadow:0 16px 50px rgba(10,92,62,.35);text-align:center}
+.a-accent .bn{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:600;line-height:1;display:block}
+.a-accent .bl{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;opacity:.75;margin-top:4px}
+.vbox,.mbox{background:#fff;border-radius:18px;padding:28px;margin-bottom:18px;border-left:4px solid var(--em3);box-shadow:0 4px 24px rgba(10,92,62,.07);transition:all .35s}
+.vbox:hover,.mbox:hover{transform:translateX(6px);box-shadow:0 8px 36px rgba(10,92,62,.13)}
+.box-t{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--em);margin-bottom:10px}
+.box-b{font-size:.92rem;line-height:1.75;color:var(--muted);font-weight:300}
+.vg{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}
+.vc{background:#fff;border:1px solid rgba(14,122,83,.14);border-radius:10px;padding:12px;text-align:center;font-size:.78rem;font-weight:600;color:var(--em);letter-spacing:.04em;transition:all .3s;cursor:default}
+.vc:hover{background:var(--em);color:#fff;transform:translateY(-2px)}
+
+/* ============================
+   STATS RIBBON
+============================= */
+#stats{
+  background:linear-gradient(135deg,var(--em) 0%,var(--em2) 55%,var(--em3) 100%);
+  padding:64px 5%;
+  position:relative;overflow:hidden;
+}
+#stats::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:28px 28px}
+.sr{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:0}
+.si{text-align:center;padding:28px 16px;border-right:1px solid rgba(255,255,255,.14);position:relative;z-index:1}
+.si:last-child{border-right:none}
+.si .sn{font-family:'Cormorant Garamond',serif;font-size:3.4rem;font-weight:600;color:#fff;display:block;line-height:1}
+.si .sl{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-top:8px;display:block;font-weight:500}
+
+/* ============================
+   FACILITIES
+============================= */
+#facilities{background:#fff}
+.fg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
+.fc-card{background:var(--cream);border:1px solid rgba(14,122,83,.1);border-radius:var(--radius);padding:28px;transition:all .4s cubic-bezier(.23,1,.32,1);position:relative;overflow:hidden}
+.fc-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--em),var(--em2));opacity:0;transition:.4s;border-radius:var(--radius)}
+.fc-card:hover{transform:translateY(-7px);box-shadow:0 20px 50px rgba(10,92,62,.18)}
+.fc-card:hover::before{opacity:1}
+.fc-card:hover .fi,.fc-card:hover .fn,.fc-card:hover .fd{color:#fff!important;background:rgba(255,255,255,.1)!important;border-color:rgba(255,255,255,.2)!important}
+.fi{width:48px;height:48px;background:rgba(14,122,83,.09);border:1px solid rgba(14,122,83,.14);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:18px;position:relative;z-index:1;transition:all .4s}
+.fn{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;color:var(--txt);margin-bottom:10px;position:relative;z-index:1;transition:color .4s}
+.fd{font-size:.84rem;color:var(--muted);line-height:1.6;position:relative;z-index:1;transition:color .4s}
+
+/* ============================
+   BEDS
+============================= */
+#beds{background:var(--cream)}
+.bedg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:14px}
+.bed-c{background:#fff;border:1px solid rgba(14,122,83,.1);border-radius:18px;padding:26px;text-align:center;transition:all .4s;position:relative;overflow:hidden}
+.bed-c::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--em),var(--em2));opacity:0;transition:.4s;border-radius:18px}
+.bed-c:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(10,92,62,.16)}
+.bed-c:hover::before{opacity:1}
+.bed-c:hover .bed-n,.bed-c:hover .bed-l{color:#fff}
+.bed-n{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--em);display:block;line-height:1;position:relative;z-index:1;transition:color .4s}
+.bed-l{font-size:.82rem;color:var(--muted);margin-top:7px;position:relative;z-index:1;transition:color .4s}
+
+/* ============================
+   DEPARTMENTS
+============================= */
+#departments{background:#fff}
+.dg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px}
+.dc{background:var(--cream);border:1px solid rgba(14,122,83,.1);border-radius:16px;padding:20px;display:flex;align-items:center;gap:14px;transition:all .3s cubic-bezier(.23,1,.32,1);cursor:default}
+.dc:hover{transform:translateX(5px);background:var(--em);border-color:var(--em);box-shadow:0 6px 24px rgba(10,92,62,.22)}
+.dc:hover .di{background:rgba(255,255,255,.2)}
+.dc:hover .dn{color:#fff}
+.di{width:38px;height:38px;background:rgba(14,122,83,.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;transition:all .3s}
+.dn{font-size:.88rem;font-weight:500;color:var(--txt);transition:color .3s;line-height:1.3}
+
+/* ============================
+   CLINICS
+============================= */
+#clinics{background:var(--dark);position:relative;overflow:hidden}
+#clinics::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 70% at 50% 50%,rgba(14,122,83,.07) 0%,transparent 70%)}
+.cg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;position:relative;z-index:1}
+.cc{background:var(--glass);border:1px solid var(--gb);border-radius:16px;padding:22px 18px;text-align:center;transition:all .35s cubic-bezier(.23,1,.32,1);backdrop-filter:blur(10px)}
+.cc:hover{background:rgba(31,214,138,.08);border-color:rgba(31,214,138,.35);transform:translateY(-5px);box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.cc-i{font-size:24px;margin-bottom:12px;display:block}
+.cc-n{font-size:.88rem;color:rgba(255,255,255,.72);transition:color .3s;line-height:1.35}
+.cc:hover .cc-n{color:var(--glow)}
+
+/* ============================
+   ANCILLARY
+============================= */
+#ancillary{background:#fff}
+.aw{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.ai{background:var(--cream);border:1px solid rgba(14,122,83,.1);border-radius:14px;padding:20px;display:flex;align-items:center;gap:12px;transition:all .3s}
+.ai:hover{background:var(--em);border-color:var(--em);transform:translateY(-3px);box-shadow:0 10px 28px rgba(10,92,62,.18)}
+.ai:hover .at,.ai:hover .aicon{color:#fff}
+.aicon{font-size:20px;flex-shrink:0;transition:color .3s}
+.at{font-size:.88rem;font-weight:500;color:var(--txt);transition:color .3s;line-height:1.3}
+
+/* ============================
+   DOCTORS
+============================= */
+#doctors{background:var(--cream)}
+.doct-g{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:20px}
+.doct-c{background:#fff;border:1px solid rgba(14,122,83,.1);border-radius:var(--radius);padding:26px;text-align:center;transition:all .4s cubic-bezier(.23,1,.32,1);position:relative;overflow:hidden}
+.doct-c::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--em3),var(--glow));transform:scaleX(0);transition:transform .4s;transform-origin:left}
+.doct-c:hover{transform:translateY(-7px);box-shadow:0 20px 50px rgba(10,92,62,.13)}
+.doct-c:hover::after{transform:scaleX(1)}
+.doct-av{width:72px;height:72px;background:linear-gradient(135deg,var(--em3),var(--em2));border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:#fff;margin:0 auto 14px;box-shadow:0 6px 20px rgba(10,92,62,.22)}
+.doct-sp{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--em3);font-weight:600;margin-bottom:7px;line-height:1.3}
+.doct-n{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--txt);margin-bottom:5px;line-height:1.3}
+.doct-q{font-size:.8rem;color:var(--muted);font-weight:300}
+
+/* ============================
+   GALLERY
+============================= */
+#gallery{background:var(--cream)}
+.gg{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:auto;gap:14px}
+.gi{border-radius:16px;overflow:hidden;position:relative;cursor:pointer}
+.gi:nth-child(1){grid-column:1 / 3;grid-row:1 / 2}
+.gi:nth-child(2){grid-column:3 / 4;grid-row:1 / 2}
+.gi:nth-child(3),.gi:nth-child(4),.gi:nth-child(5){grid-column:span 1;grid-row:2 / 3}
+.gi:nth-child(6){grid-column:1 / 2;grid-row:3}
+.gi:nth-child(7){grid-column:2 / 4;grid-row:3}
+.gi img{width:100%;height:260px;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.23,1,.32,1)}
+.gi:nth-child(1) img,.gi:nth-child(7) img{height:280px}
+.gi:hover img{transform:scale(1.06)}
+.g-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,28,18,.8) 0%,transparent 55%);opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:18px}
+.gi:hover .g-ov{opacity:1}
+.g-lb{color:#fff;font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+/* lightbox */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:9000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(14px);padding:20px}
+.lb.on{display:flex}
+.lb-img{max-width:90vw;max-height:85vh;border-radius:14px;object-fit:contain;box-shadow:0 32px 80px rgba(0,0,0,.8)}
+.lb-x{position:absolute;top:20px;right:28px;color:#fff;font-size:2rem;cursor:pointer;opacity:.7;transition:opacity .2s;line-height:1;background:none;border:none;padding:4px}
+.lb-x:hover{opacity:1}
+
+/* ============================
+   MAP SECTION
+============================= */
+#map-section{background:#fff}
+.map-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:48px;align-items:start}
+.map-info{}
+.map-info h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:var(--em);margin-bottom:20px}
+.map-detail{display:flex;align-items:flex-start;gap:14px;margin-bottom:20px;padding:18px;background:var(--cream);border-radius:14px;border:1px solid rgba(14,122,83,.1)}
+.map-icon{width:40px;height:40px;background:linear-gradient(135deg,var(--em3),var(--em2));border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.map-detail-text strong{display:block;color:var(--em);font-weight:600;font-size:.88rem;margin-bottom:4px}
+.map-detail-text span{color:var(--muted);font-size:.85rem;line-height:1.5}
+.map-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.map-frame{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(10,92,62,.15);border:1px solid rgba(14,122,83,.12)}
+.map-frame iframe{width:100%;height:460px;display:block;border:none}
+
+/* ============================
+   CONTACT
+============================= */
+#contact{background:linear-gradient(135deg,var(--dark) 0%,var(--dark2) 100%);position:relative;overflow:hidden;text-align:center}
+#contact::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(14,122,83,.14) 0%,transparent 70%)}
+.c-inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
+.c-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(31,214,138,.1);border:1px solid rgba(31,214,138,.2);color:var(--glow);padding:7px 18px;border-radius:50px;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;margin-bottom:24px}
+.c-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4.5vw,4.5rem);font-weight:300;color:#fff;line-height:1.1;margin-bottom:18px}
+.c-sub{font-size:1rem;color:rgba(255,255,255,.52);margin-bottom:44px;font-weight:300;line-height:1.7}
+.c-acts{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:52px}
+.c-info{display:flex;gap:32px;justify-content:center;flex-wrap:wrap}
+.c-i{display:flex;align-items:center;gap:8px;color:rgba(255,255,255,.55);font-size:.88rem}
+.c-i .ico{color:var(--glow);font-size:1rem}
+
+/* ============================
+   FOOTER
+============================= */
+footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.05);padding:36px 5%}
+.foot-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.f-brand{font-family:'Cormorant Garamond',serif;font-size:1.25rem;color:rgba(255,255,255,.45)}
+.f-div{width:1px;height:28px;background:rgba(255,255,255,.1)}
+.f-note{font-size:.78rem;color:rgba(255,255,255,.28);text-align:right}
+
+/* ============================
+   BOOKING MODAL
+============================= */
+.mo{position:fixed;inset:0;background:rgba(0,0,0,.72);z-index:8000;display:none;align-items:center;justify-content:center;backdrop-filter:blur(10px);padding:16px}
+.mo.on{display:flex}
+.modal{background:#fff;border-radius:24px;width:100%;max-width:600px;max-height:min(92vh,820px);overflow-y:auto;overflow-x:hidden;box-shadow:0 36px 90px rgba(0,0,0,.5);animation:mIn .4s cubic-bezier(.23,1,.32,1)}
+@keyframes mIn{from{opacity:0;transform:translateY(36px) scale(.96)}to{opacity:1;transform:none}}
+.m-head{background:linear-gradient(135deg,var(--em),var(--em2));padding:32px 36px 24px;border-radius:24px 24px 0 0;position:relative}
+.m-head h2{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:600;color:#fff;margin-bottom:5px}
+.m-head p{color:rgba(255,255,255,.65);font-size:.88rem}
+.m-close{position:absolute;top:18px;right:18px;min-width:44px;height:44px;padding:0 14px;background:rgba(255,255,255,.14);border:none;border-radius:999px;color:#fff;font-size:1rem;font-weight:600;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;transition:.3s;line-height:1}
+.m-close:hover{background:rgba(255,255,255,.28)}
+.m-body{padding:32px 36px}
+.m-prog{display:flex;align-items:center;margin-bottom:28px}
+.mp-item{flex:1;text-align:center;position:relative}
+.mp-item:not(:last-child)::after{content:'';position:absolute;top:17px;left:50%;right:-50%;height:2px;background:#e8e0d4;z-index:0}
+.mp-item.done:not(:last-child)::after{background:var(--em3)}
+.mp-dot{width:34px;height:34px;border-radius:50%;background:#e8e0d4;border:2px solid #e8e0d4;display:flex;align-items:center;justify-content:center;margin:0 auto 6px;font-size:.82rem;font-weight:600;color:#bbb;position:relative;z-index:1;transition:all .3s}
+.mp-item.active .mp-dot{background:var(--em3);border-color:var(--em3);color:#fff;box-shadow:0 4px 14px rgba(20,160,107,.35)}
+.mp-item.done .mp-dot{background:var(--em);border-color:var(--em);color:#fff}
+.mp-lbl{font-size:.68rem;color:#bbb;font-weight:500;letter-spacing:.04em;line-height:1.2}
+.mp-item.active .mp-lbl,.mp-item.done .mp-lbl{color:var(--em)}
+.m-step{display:none}
+.m-step.on{display:block}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;font-size:.78rem;font-weight:600;color:var(--em);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:12px 16px;border:1.5px solid #e0d8ce;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:.92rem;color:var(--txt);outline:none;transition:.3s}
+.form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--em3);box-shadow:0 0 0 3px rgba(20,160,107,.1)}
+.form-group input.err,.form-group select.err,.form-group textarea.err{border-color:#d14f4f;box-shadow:0 0 0 3px rgba(209,79,79,.12)}
+.form-group textarea{height:80px;resize:vertical}
+.field-help{display:block;margin-top:6px;font-size:.76rem;color:var(--muted);line-height:1.45}
+.field-error{display:none;margin-top:6px;font-size:.76rem;color:#b23b3b;line-height:1.4}
+.field-error.show{display:block}
+.dept-chips{display:flex;flex-wrap:wrap;gap:8px}
+.dchip{padding:7px 14px;border:1.5px solid #e0d8ce;border-radius:9px;font-size:.8rem;font-weight:500;color:var(--muted);cursor:pointer;transition:all .25s;user-select:none}
+.dchip:hover{border-color:var(--em3);color:var(--em)}
+.dchip.sel{background:var(--em);border-color:var(--em);color:#fff}
+.tslots{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ts{padding:9px 6px;border:1.5px solid #e0d8ce;border-radius:9px;font-size:.78rem;font-weight:500;color:var(--muted);cursor:pointer;text-align:center;transition:all .25s}
+.ts:hover{border-color:var(--em3);color:var(--em)}
+.ts.sel{background:var(--em3);border-color:var(--em3);color:#fff}
+.m-nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;padding-top:20px;border-top:1px solid #f0ebe2}
+.btn-back{background:none;border:1.5px solid #e0d8ce;color:var(--muted);padding:11px 22px;border-radius:10px;font-size:.88rem;font-weight:500;cursor:pointer;transition:.3s;font-family:'DM Sans',sans-serif}
+.btn-back:hover{border-color:var(--em3);color:var(--em)}
+.btn-next{background:linear-gradient(135deg,var(--glow),var(--em3));color:var(--dark);padding:11px 26px;border-radius:10px;font-size:.88rem;font-weight:600;cursor:pointer;border:none;transition:.3s;box-shadow:0 4px 16px rgba(31,214,138,.28);font-family:'DM Sans',sans-serif}
+.btn-next:hover{transform:translateY(-1px);box-shadow:0 8px 28px rgba(31,214,138,.45)}
+.appt-sum{background:var(--cream);border-radius:14px;padding:20px;margin-top:18px}
+.arow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #e8e0d4;font-size:.88rem}
+.arow:last-child{border-bottom:none}
+.arow span:first-child{color:var(--muted)}
+.arow span:last-child{color:var(--em);font-weight:600}
+.success-wrap{text-align:center;padding:10px 0}
+.s-tick{width:72px;height:72px;background:linear-gradient(135deg,var(--glow),var(--em3));border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 18px;box-shadow:0 10px 32px rgba(31,214,138,.35);animation:tickPop .5s cubic-bezier(.23,1,.32,1)}
+@keyframes tickPop{from{transform:scale(0)}to{transform:scale(1)}}
+.success-wrap h3{font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--em);margin-bottom:10px}
+.success-wrap p{color:var(--muted);line-height:1.7;font-size:.92rem}
+
+@media(max-width:640px){
+  .mo{padding:0;align-items:flex-end}
+  .modal{max-width:none;max-height:100dvh;border-radius:24px 24px 0 0}
+  .m-head{padding:24px 20px 20px}
+  .m-head h2{font-size:1.55rem;padding-right:88px}
+  .m-head p{padding-right:88px}
+  .m-close{top:14px;right:14px;min-width:40px;height:40px;padding:0 12px;font-size:.92rem}
+  .m-body{padding:22px 20px 28px}
+  .fg2{grid-template-columns:1fr}
+  .m-prog{margin-bottom:22px}
+  .mp-lbl{font-size:.63rem}
+  .tslots{grid-template-columns:repeat(2,1fr)}
+  .m-nav{gap:10px}
+  .m-nav .btn-back,.m-nav .btn-next{flex:1;justify-content:center}
+}
+
+/* ============================
+   CHATBOX
+============================= */
+.chat-btn{position:fixed;bottom:calc(28px + env(safe-area-inset-bottom));right:calc(28px + env(safe-area-inset-right));z-index:7000;width:58px;height:58px;background:linear-gradient(135deg,var(--glow),var(--em3));border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 8px 28px rgba(31,214,138,.45);transition:all .3s;animation:chatPulse 3s ease-in-out infinite}
+@keyframes chatPulse{0%,100%{box-shadow:0 8px 28px rgba(31,214,138,.45)}50%{box-shadow:0 8px 40px rgba(31,214,138,.7),0 0 0 12px rgba(31,214,138,.06)}}
+.chat-btn:hover{transform:scale(1.1);box-shadow:0 12px 36px rgba(31,214,138,.6)}
+.chatbox{
+  position:fixed;bottom:calc(96px + env(safe-area-inset-bottom));right:calc(28px + env(safe-area-inset-right));z-index:7000;
+  width:340px;max-width:calc(100vw - 40px);
+  background:#fff;border-radius:20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.2);
+  border:1px solid rgba(14,122,83,.12);
+  display:none;flex-direction:column;
+  overflow:hidden;
+  animation:chatIn .3s cubic-bezier(.23,1,.32,1);
+}
+.chatbox.on{display:flex}
+@keyframes chatIn{from{opacity:0;transform:translateY(20px) scale(.95)}to{opacity:1;transform:none}}
+.chat-head{background:linear-gradient(135deg,var(--em),var(--em2));padding:16px 20px;display:flex;align-items:center;gap:12px}
+.chat-avatar{width:38px;height:38px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.chat-head-info strong{color:#fff;font-size:.92rem;font-weight:600;display:block}
+.chat-head-info span{color:rgba(255,255,255,.65);font-size:.75rem;display:flex;align-items:center;gap:4px}
+.chat-head-info span::before{content:'';width:6px;height:6px;background:var(--glow);border-radius:50%;display:inline-block}
+.chat-close{margin-left:auto;background:none;border:none;color:rgba(255,255,255,.7);cursor:pointer;font-size:1.1rem;line-height:1;padding:2px}
+.chat-close:hover{color:#fff}
+.chat-msgs{flex:1;min-height:260px;max-height:320px;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:#fafaf8}
+.msg{max-width:85%;padding:10px 14px;border-radius:14px;font-size:.87rem;line-height:1.5;animation:msgIn .25s ease}
+@keyframes msgIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg.bot{background:#fff;color:var(--txt);border:1px solid #e8e3da;border-radius:14px 14px 14px 4px;align-self:flex-start}
+.msg.user{background:linear-gradient(135deg,var(--em3),var(--em2));color:#fff;border-radius:14px 14px 4px 14px;align-self:flex-end}
+.chat-quick{padding:10px 12px;display:flex;flex-wrap:wrap;gap:6px;border-top:1px solid #f0ebe2;background:#fff}
+.qbtn{padding:6px 12px;background:rgba(14,122,83,.08);border:1px solid rgba(14,122,83,.15);border-radius:20px;font-size:.78rem;color:var(--em);cursor:pointer;transition:.2s;white-space:nowrap}
+.qbtn:hover{background:var(--em);color:#fff;border-color:var(--em)}
+.chat-input-row{display:flex;align-items:center;gap:8px;padding:12px 16px;border-top:1px solid #f0ebe2;background:#fff}
+.chat-input{flex:1;padding:10px 14px;border:1.5px solid #e0d8ce;border-radius:10px;font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:.3s;color:var(--txt)}
+.chat-input:focus{border-color:var(--em3);box-shadow:0 0 0 3px rgba(20,160,107,.1)}
+.chat-send{width:38px;height:38px;background:linear-gradient(135deg,var(--glow),var(--em3));border:none;border-radius:10px;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:16px;transition:.3s;flex-shrink:0}
+.chat-send:hover{transform:scale(1.08);box-shadow:0 4px 14px rgba(31,214,138,.4)}
+
+/* ============================
+   REVEAL ANIMATIONS
+============================= */
+.rv,.rl,.rr{transition:opacity .75s cubic-bezier(.23,1,.32,1),transform .75s cubic-bezier(.23,1,.32,1)}
+.rv{opacity:0;transform:translateY(36px)}
+.rl{opacity:0;transform:translateX(-36px)}
+.rr{opacity:0;transform:translateX(36px)}
+.rv.ok,.rl.ok,.rr.ok{opacity:1;transform:none}
+.s1{transition-delay:.05s}.s2{transition-delay:.12s}.s3{transition-delay:.19s}
+.s4{transition-delay:.26s}.s5{transition-delay:.33s}.s6{transition-delay:.4s}
+
+/* ============================
+   RESPONSIVE
+============================= */
+@media(max-width:1100px){
+  .h-inner{grid-template-columns:1fr;padding-bottom:220px}
+  .h-visual{display:none}
+  .ag{grid-template-columns:1fr}
+  .a-img-wrap{display:none}
+  .sr{grid-template-columns:repeat(3,1fr)}
+  .si:nth-child(4){border-top:1px solid rgba(255,255,255,.14)}
+  .map-wrap{grid-template-columns:1fr}
+  .map-frame iframe{height:340px}
+}
+@media(max-width:768px){
+  .nlinks{display:none}
+  .ham{display:flex}
+  section{padding:72px 4%}
+  .h-stats-inner{grid-template-columns:repeat(2,1fr)}
+  .h-stat:nth-child(2){border-right:none}
+  .h-stat:nth-child(3){border-top:1px solid rgba(255,255,255,.08)}
+  .h-acts{flex-direction:column;align-items:flex-start}
+  .sr{grid-template-columns:repeat(2,1fr)}
+  .si:nth-child(2){border-right:none}
+  .fg2{grid-template-columns:1fr}
+  .gg{grid-template-columns:1fr;}
+  .gi{grid-column:auto!important;grid-row:auto!important}
+  .gi img{height:220px!important}
+  .tslots{grid-template-columns:repeat(3,1fr)}
+  .m-body{padding:20px}
+  .m-head{padding:22px 20px 18px}
+  .foot-inner{flex-direction:column;text-align:center}
+  .f-note{text-align:center}
+  .chatbox{right:calc(12px + env(safe-area-inset-right));bottom:calc(88px + env(safe-area-inset-bottom));width:calc(100vw - 24px - env(safe-area-inset-right))}
+  .chat-btn{right:calc(16px + env(safe-area-inset-right));bottom:calc(20px + env(safe-area-inset-bottom))}
+  .c-info{flex-direction:column;align-items:center;gap:16px}
+  .vg{grid-template-columns:repeat(2,1fr)}
+  .map-cta{flex-direction:column}
+}
+@media(max-width:480px){
+  .h-title{font-size:2.4rem}
+  .h-stats-inner{grid-template-columns:repeat(2,1fr)}
+  nav{padding:0 3%}
+  section{padding:60px 4%}
+  .doct-g{grid-template-columns:repeat(auto-fill,minmax(160px,1fr))}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){
+  nav.sc,.mob-menu,.h-fc,.h-stats,.cc,.lb,.mo{backdrop-filter:none;background:rgba(10,26,18,.98)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<!-- ============ NAV ============ -->
+<nav id="nav">
+  <a href="#hero" class="nlogo">
+    <div class="nlogo-icon"><img src="assets/img/aasi.jpg" alt="AASI" loading="lazy" decoding="async" width="546" height="546"></div>
+    <div class="nlogo-text"><span class="brand">AASI</span><span class="sub">Multispeciality Hospital</span></div>
+  </a>
+  <div class="nlinks" id="nlinks">
+    <a href="#about" class="nl">About</a>
+    <a href="#facilities" class="nl">Facilities</a>
+    <a href="#departments" class="nl">Departments</a>
+    <a href="#doctors" class="nl">Doctors</a>
+    <a href="#gallery" class="nl">Gallery</a>
+    <a href="#map-section" class="nl">Location</a>
+    <a href="#" class="nl book-btn" onclick="openBooking();return false;">Book</a>
+  </div>
+  <button class="ham" id="hamBtn" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+<div class="mob-menu" id="mobMenu">
+  <a href="#about" class="nl" onclick="closeMenu()">About</a>
+  <a href="#facilities" class="nl" onclick="closeMenu()">Facilities</a>
+  <a href="#departments" class="nl" onclick="closeMenu()">Departments</a>
+  <a href="#doctors" class="nl" onclick="closeMenu()">Doctors</a>
+  <a href="#gallery" class="nl" onclick="closeMenu()">Gallery</a>
+  <a href="#map-section" class="nl" onclick="closeMenu()">Location</a>
+  <a href="#" class="nl book-btn" onclick="openBooking();closeMenu();return false;">Book Appointment</a>
+</div>
+
+<!-- ============ HERO ============ -->
+<main id="main-content">
+<section id="hero">
+  <div class="h-bg"></div><div class="h-grid"></div>
+  <div class="orb o1"></div><div class="orb o2"></div>
+  <div class="h-inner">
+    <div>
+      <div class="h-badge"><span class="h-dot"></span>Ramnad's Largest Private Hospital</div>
+      <h1 class="h-title"><em>Exceptional</em><strong>Healthcare</strong>Delivered</h1>
+      <p class="h-desc">Where compassion meets cutting-edge medicine. AASI Multispeciality Hospital serves Ramnad with world-class facilities, specialized care, and 24/7 emergency services.</p>
+      <div class="h-acts">
+        <a href="#" onclick="openBooking();return false;" class="btn-p">Book Appointment</a>
+        <a href="tel:04567232301" class="btn-g">Call 04567 232301</a>
+      </div>
+    </div>
+    <div class="h-visual">
+      <div class="h-fc h-fc1"><div class="h-fc-icon">ER</div><div><strong>24/7 Emergency</strong><span>Always Ready</span></div></div>
+      <div class="h-card">
+        <img src="assets/img/aasi-hospital-building.jpg" alt="AASI Hospital Building" fetchpriority="high" decoding="async" width="900" height="510">
+        <div class="h-card-foot"><div class="h-tag">Premier Care</div><p>Largest Private Hospital in Ramnad</p></div>
+      </div>
+      <div class="h-fc h-fc2"><div class="h-fc-icon">ICU</div><div><strong>30 Critical Beds</strong><span>ICU &amp; CCU</span></div></div>
+    </div>
+  </div>
+  <div class="h-stats">
+    <div class="h-stats-inner">
+      <div class="h-stat"><span class="h-stat-n" data-count="80">0</span><span class="h-stat-l">Total Beds</span></div>
+      <div class="h-stat"><span class="h-stat-n" data-count="4">0</span><span class="h-stat-l">Theatres</span></div>
+      <div class="h-stat"><span class="h-stat-n" data-count="30">0</span><span class="h-stat-l">Critical Beds</span></div>
+      <div class="h-stat"><span class="h-stat-n" data-count="18">0</span><span class="h-stat-l">Specialities</span></div>
+    </div>
+  </div>
+  <div class="scroll-ind"><span>Scroll</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="sh rv"><div class="eyebrow">Who We Are</div><h2 class="stitle">Excellence in <em>Every Care</em></h2><p class="sdesc">AASI Multispeciality Hospital - Ramnad's premier healthcare institution combining medical expertise with compassionate care.</p></div>
+  <div class="ag">
+    <div class="a-img-wrap rl">
+      <div class="a-img"><img src="assets/img/aasi-icu.jpg" alt="AASI ICU" loading="lazy" decoding="async" width="900" height="673"></div>
+      <div class="a-accent"><span class="bn" data-count="100">0</span><div class="bl">Bed Capacity</div></div>
+    </div>
+    <div class="rr">
+      <div class="vbox"><div class="box-t">Vision</div><div class="box-b">To provide the best available medical practice with highest international standards of patient care, with unrelenting attention to medical excellence and patient safety.</div></div>
+      <div class="mbox"><div class="box-t">Mission</div><div class="box-b">Developing healthcare reputation, pioneering new standards, incorporating information technologies - all while keeping patients at the heart of every decision.</div></div>
+      <div class="vg"><div class="vc">Integrity</div><div class="vc">Innovation</div><div class="vc">Collaboration</div><div class="vc">Accountability</div><div class="vc">Results</div><div class="vc">Excellence</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<div id="stats">
+  <div class="sr">
+    <div class="si rv s1"><span class="sn" data-count="80">0</span><span class="sl">Total Beds</span></div>
+    <div class="si rv s2"><span class="sn" data-count="4">0</span><span class="sl">Theatres</span></div>
+    <div class="si rv s3"><span class="sn" data-count="24">0</span><span class="sl">ICU Beds</span></div>
+    <div class="si rv s4"><span class="sn" data-count="18">0</span><span class="sl">Specialities</span></div>
+    <div class="si rv s5"><span class="sn" data-count="4">0</span><span class="sl">Dialysis Units</span></div>
+  </div>
+</div>
+
+<!-- ============ FACILITIES ============ -->
+<section id="facilities">
+  <div class="sh rv"><div class="eyebrow">Infrastructure</div><h2 class="stitle">World-Class <em>Facilities</em></h2></div>
+  <div class="fg">
+    <div class="fc-card rv s1"><div class="fi">OT</div><div class="fn">Theatre Facility</div><div class="fd">4 theatres (3 major + 1 minor), laparoscopic, endoscopy, C-Arm, operating microscopes &amp; defibrillators.</div></div>
+    <div class="fc-card rv s2"><div class="fi">24H</div><div class="fn">24-Hour Pharmacy</div><div class="fd">Round-the-clock pharmacy ensuring medicines are available whenever patients need them.</div></div>
+    <div class="fc-card rv s3"><div class="fi">ICU</div><div class="fn">ICU Ward</div><div class="fd">7 beds with invasive &amp; non-invasive monitors, pulse oximeters, infusion pumps, central oxygen &amp; suction.</div></div>
+    <div class="fc-card rv s4"><div class="fi">CCU</div><div class="fn">CCU Ward</div><div class="fd">7 beds with 2 ventilators, ECG, defibrillator, central oxygen and full monitoring capabilities.</div></div>
+    <div class="fc-card rv s5"><div class="fi">NICU</div><div class="fn">NICU Ward</div><div class="fd">4 beds with incubator, warmer, photo therapy unit, infusion pump and ventilator for neonatal care.</div></div>
+    <div class="fc-card rv s6"><div class="fi">LAB</div><div class="fn">Cath Lab</div><div class="fd">State-of-the-art catheterization laboratory for cardiac interventions and diagnostics.</div></div>
+    <div class="fc-card rv s1"><div class="fi">CT</div><div class="fn">CT Scan &amp; Imaging</div><div class="fd">Advanced: CT scan, 2D-Echo, TMT, EEG, X-ray, ultrasound, audiometry, optometry - 24 hrs.</div></div>
+    <div class="fc-card rv s2"><div class="fi">DIA</div><div class="fn">Dialysis Centre</div><div class="fd">4 dedicated dialysis units providing life-saving renal support therapy for kidney patients.</div></div>
+  </div>
+</section>
+
+<!-- ============ BEDS ============ -->
+<section id="beds">
+  <div class="sh rv"><div class="eyebrow">Accommodation</div><h2 class="stitle">Rooms for <em>Every Need</em></h2></div>
+  <div class="bedg">
+    <div class="bed-c rv s1"><span class="bed-n" data-count="20">0</span><div class="bed-l">General Ward</div></div>
+    <div class="bed-c rv s2"><span class="bed-n" data-count="15">0</span><div class="bed-l">Non-AC Rooms</div></div>
+    <div class="bed-c rv s3"><span class="bed-n" data-count="15">0</span><div class="bed-l">AC Rooms</div></div>
+    <div class="bed-c rv s4"><span class="bed-n" data-count="4">0</span><div class="bed-l">Deluxe Rooms</div></div>
+    <div class="bed-c rv s5"><span class="bed-n" data-count="12">0</span><div class="bed-l">Twin Sharing</div></div>
+    <div class="bed-c rv s6"><span class="bed-n" data-count="24">0</span><div class="bed-l">ICU Beds</div></div>
+    <div class="bed-c rv s1"><span class="bed-n" data-count="4">0</span><div class="bed-l">Dialysis</div></div>
+    <div class="bed-c rv s2"><span class="bed-n" data-count="6">0</span><div class="bed-l">Casualty</div></div>
+  </div>
+</section>
+
+<!-- ============ DEPARTMENTS ============ -->
+<section id="departments">
+  <div class="sh rv"><div class="eyebrow">Medical Specialities</div><h2 class="stitle">Our Expert <em>Departments</em></h2></div>
+  <div class="dg">
+    <div class="dc rv s1"><div class="di">CAR</div><div class="dn">Cardiology</div></div>
+    <div class="dc rv s2"><div class="di">NEU</div><div class="dn">Neurology</div></div>
+    <div class="dc rv s3"><div class="di">NS</div><div class="dn">Neuro Surgery</div></div>
+    <div class="dc rv s4"><div class="di">ORT</div><div class="dn">Orthopaedics &amp; Spine Surgery</div></div>
+    <div class="dc rv s5"><div class="di">PUL</div><div class="dn">Pulmonology</div></div>
+    <div class="dc rv s6"><div class="di">NEP</div><div class="dn">Nephrology</div></div>
+    <div class="dc rv s1"><div class="di">URO</div><div class="dn">Andrology &amp; Urology</div></div>
+    <div class="dc rv s2"><div class="di">GAS</div><div class="dn">Gastroenterology</div></div>
+    <div class="dc rv s3"><div class="di">OBG</div><div class="dn">Obstetrics &amp; Gynaecology</div></div>
+    <div class="dc rv s4"><div class="di">PED</div><div class="dn">Paediatrics / Neonatology</div></div>
+    <div class="dc rv s5"><div class="di">PS</div><div class="dn">Paediatrics Surgery</div></div>
+    <div class="dc rv s6"><div class="di">MED</div><div class="dn">General Medicine</div></div>
+    <div class="dc rv s1"><div class="di">IM</div><div class="dn">Internal Medicine</div></div>
+    <div class="dc rv s2"><div class="di">GS</div><div class="dn">General Surgery</div></div>
+    <div class="dc rv s3"><div class="di">PLA</div><div class="dn">Plastic Surgery</div></div>
+    <div class="dc rv s4"><div class="di">DEN</div><div class="dn">Dental Surgery</div></div>
+  </div>
+</section>
+
+<!-- ============ CLINICS ============ -->
+<section id="clinics">
+  <div class="sh rv"><div class="eyebrow" style="color:var(--glow)">Specialised Programs</div><h2 class="stitle" style="color:#fff">Special <em style="color:var(--glow)">Clinics</em></h2><p class="sdesc" style="color:rgba(255,255,255,.5)">Dedicated programs for chronic conditions and holistic wellness.</p></div>
+  <div class="cg">
+    <div class="cc rv s1"><span class="cc-i">DIA</span><div class="cc-n">Diabetic Clinic</div></div>
+    <div class="cc rv s2"><span class="cc-i">BKP</span><div class="cc-n">Back Pain Clinic</div></div>
+    <div class="cc rv s3"><span class="cc-i">AST</span><div class="cc-n">Asthma Clinic</div></div>
+    <div class="cc rv s4"><span class="cc-i">REH</span><div class="cc-n">Rehabilitation Medicine</div></div>
+    <div class="cc rv s5"><span class="cc-i">ADO</span><div class="cc-n">Adolescent Clinic</div></div>
+    <div class="cc rv s6"><span class="cc-i">GER</span><div class="cc-n">Geriatric Clinic</div></div>
+    <div class="cc rv s1"><span class="cc-i">STR</span><div class="cc-n">Stress Relief Clinic</div></div>
+    <div class="cc rv s2"><span class="cc-i">BAR</span><div class="cc-n">Bariatric Surgical Clinic</div></div>
+    <div class="cc rv s3"><span class="cc-i">COS</span><div class="cc-n">Cosmetic Clinic</div></div>
+    <div class="cc rv s4"><span class="cc-i">OBE</span><div class="cc-n">Obesity Clinic</div></div>
+    <div class="cc rv s5"><span class="cc-i">DEA</span><div class="cc-n">De-addiction Clinic</div></div>
+  </div>
+</section>
+
+<!-- ============ ANCILLARY ============ -->
+<section id="ancillary">
+  <div class="sh rv"><div class="eyebrow">Support Services</div><h2 class="stitle">Ancillary <em>Specialties</em></h2></div>
+  <div class="aw">
+    <div class="ai rv s1"><span class="aicon">ER</span><div class="at">Accident &amp; Emergency</div></div>
+    <div class="ai rv s2"><span class="aicon">ANE</span><div class="at">Anesthesiology &amp; Pain Clinic</div></div>
+    <div class="ai rv s3"><span class="aicon">OT</span><div class="at">Operation Theatres</div></div>
+    <div class="ai rv s4"><span class="aicon">LAB</span><div class="at">Cath Lab</div></div>
+    <div class="ai rv s5"><span class="aicon">DIA</span><div class="at">Dialysis</div></div>
+    <div class="ai rv s6"><span class="aicon">CHK</span><div class="at">Health Check-up</div></div>
+    <div class="ai rv s1"><span class="aicon">IMG</span><div class="at">Imaging &amp; Interventional Radiology</div></div>
+    <div class="ai rv s2"><span class="aicon">IRC</span><div class="at">Intensive Respiratory Care</div></div>
+    <div class="ai rv s3"><span class="aicon">IMC</span><div class="at">Intensive Medical Care Unit</div></div>
+    <div class="ai rv s4"><span class="aicon">LAB</span><div class="at">Laboratory Services</div></div>
+    <div class="ai rv s5"><span class="aicon">PHM</span><div class="at">Pharmacy</div></div>
+    <div class="ai rv s6"><span class="aicon">PMR</span><div class="at">Physical Medicine &amp; Rehab</div></div>
+    <div class="ai rv s1"><span class="aicon">HOM</span><div class="at">Home Nursing</div></div>
+    <div class="ai rv s2"><span class="aicon">DIET</span><div class="at">Diet Lab</div></div>
+  </div>
+</section>
+
+<!-- ============ DOCTORS ============ -->
+<section id="doctors">
+  <div class="sh rv"><div class="eyebrow">Our Specialists</div><h2 class="stitle">Meet Our <em>Medical Team</em></h2><p class="sdesc">Highly qualified specialists committed to your health and wellbeing.</p></div>
+  <div class="doct-g">
+    <div class="doct-c rv s1"><div class="doct-av">RJ</div><div class="doct-sp">Cardiothoracic Surgery</div><div class="doct-n">Specialist in Cardiothoracic Surgery</div><div class="doct-q">MS., MCh., PhD.</div></div>
+<div class="doct-c rv s2"><div class="doct-av">GS</div><div class="doct-sp">General Surgery</div><div class="doct-n">Specialist in General Surgery</div><div class="doct-q">M.S.</div></div>
+<div class="doct-c rv s3"><div class="doct-av">GM</div><div class="doct-sp">General Medicine</div><div class="doct-n">Specialist in General Medicine</div><div class="doct-q">M.D.</div></div>
+<div class="doct-c rv s4"><div class="doct-av">NS</div><div class="doct-sp">Neuro Surgery</div><div class="doct-n">Specialist in Neuro Surgery</div><div class="doct-q">M.S., M.Ch.</div></div>
+<div class="doct-c rv s5"><div class="doct-av">NK</div><div class="doct-sp">Nephrology</div><div class="doct-n">Specialist in Nephrology</div><div class="doct-q">M.D., DM.</div></div>
+<div class="doct-c rv s6"><div class="doct-av">OP</div><div class="doct-sp">Ophthalmology</div><div class="doct-n">Specialist in Ophthalmology</div><div class="doct-q">M.B.B.S., DO.</div></div>
+<div class="doct-c rv s1"><div class="doct-av">PD</div><div class="doct-sp">Paediatrics</div><div class="doct-n">Specialist in Paediatrics</div><div class="doct-q">MBBS., DCH.</div></div>
+<div class="doct-c rv s2"><div class="doct-av">AN</div><div class="doct-sp">Anesthesiology</div><div class="doct-n">Specialist in Anesthesiology</div><div class="doct-q">M.B.B.S., M.D.</div></div>
+<div class="doct-c rv s3"><div class="doct-av">OR</div><div class="doct-sp">Orthopaedics</div><div class="doct-n">Specialist in Orthopaedics</div><div class="doct-q">M.S. (Ortho)</div></div>
+<div class="doct-c rv s4"><div class="doct-av">PL</div><div class="doct-sp">Pulmonology</div><div class="doct-n">Specialist in Pulmonology</div><div class="doct-q">MBBS., DTCD.</div></div>
+<div class="doct-c rv s5"><div class="doct-av">PS</div><div class="doct-sp">Plastic Surgery</div><div class="doct-n">Specialist in Plastic Surgery</div><div class="doct-q">M.S., M.Ch.</div></div>
+<div class="doct-c rv s6"><div class="doct-av">PC</div><div class="doct-sp">Paediatric Surgery</div><div class="doct-n">Specialist in Paediatric Surgery</div><div class="doct-q">M.S., M.Ch.</div></div>
+<div class="doct-c rv s1"><div class="doct-av">EN</div><div class="doct-sp">ENT</div><div class="doct-n">Specialist in ENT</div><div class="doct-q">M.B.B.S., M.S.</div></div>
+<div class="doct-c rv s2"><div class="doct-av">DT</div><div class="doct-sp">Dental & Orthodontics</div><div class="doct-n">Specialist in Dental & Orthodontics</div><div class="doct-q">M.D.S.</div></div>
+<div class="doct-c rv s3"><div class="doct-av">VS</div><div class="doct-sp">Vascular Surgery</div><div class="doct-n">Specialist in Vascular Surgery</div><div class="doct-q">M.Ch.</div></div>
+<div class="doct-c rv s4"><div class="doct-av">UR</div><div class="doct-sp">Urology</div><div class="doct-n">Specialist in Urology</div><div class="doct-q">M.S., M.Ch.</div></div>
+<div class="doct-c rv s5"><div class="doct-av">PT</div><div class="doct-sp">Physiotherapy</div><div class="doct-n">Specialist in Physiotherapy</div><div class="doct-q">MPT</div></div>
+<div class="doct-c rv s6"><div class="doct-av">PY</div><div class="doct-sp">Psychiatry</div><div class="doct-n">Specialist in Psychiatry</div><div class="doct-q">MD (Psy)</div></div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section id="gallery">
+  <div class="sh rv"><div class="eyebrow">Department Gallery</div><h2 class="stitle">Inside <em>AASI</em></h2><p class="sdesc">A glimpse into our world-class facilities and dedicated care environments.</p></div>
+  <div class="gg">
+    <div class="gi rv s1" onclick="openLB(this.querySelector('img').src,'ICU Ward')"><img src="assets/img/icu-ward.jpg" alt="ICU Ward" loading="lazy" decoding="async" width="900" height="673"><div class="g-ov"><div class="g-lb">ICU Ward</div></div></div>
+    <div class="gi rv s2" onclick="openLB(this.querySelector('img').src,'24H Pharmacy')"><img src="assets/img/24h-pharmacy.jpg" alt="24H Pharmacy" loading="lazy" decoding="async" width="900" height="675"><div class="g-ov"><div class="g-lb">24H Pharmacy</div></div></div>
+    <div class="gi rv s3" onclick="openLB(this.querySelector('img').src,'24H X-Ray')"><img src="assets/img/x-ray.jpg" alt="X-Ray" loading="lazy" decoding="async" width="900" height="674"><div class="g-ov"><div class="g-lb">24H X-Ray</div></div></div>
+    <div class="gi rv s5" onclick="openLB(this.querySelector('img').src,'24H Laboratory')"><img src="assets/img/lab.jpg" alt="Lab" loading="lazy" decoding="async" width="900" height="675"><div class="g-ov"><div class="g-lb">24H Lab</div></div></div>
+    <div class="gi rv s1" onclick="openLB(this.querySelector('img').src,'CT Scan Unit')"><img src="assets/img/ct-scan.jpg" alt="CT Scan" loading="lazy" decoding="async" width="900" height="675"><div class="g-ov"><div class="g-lb">CT Scan</div></div></div>
+    <div class="gi rv s2" onclick="openLB(this.querySelector('img').src,'AASI Hospital')"><img src="assets/img/hospital.jpg" alt="Hospital" loading="lazy" decoding="async" width="900" height="510"><div class="g-ov"><div class="g-lb">AASI Hospital</div></div></div>
+    <div class="gi rv s2" onclick="openLB(this.querySelector('img').src,'AASI Hospital')"><img src="assets/img/hospital.jpg" alt="Hospital" loading="lazy" decoding="async" width="900" height="510"><div class="g-ov"><div class="g-lb">AASI Hospital</div></div></div>
+  </div>
+</section>
+
+<!-- ============ MAP ============ -->
+<section id="map-section">
+  <div class="sh rv"><div class="eyebrow">Find Us</div><h2 class="stitle">Our <em>Location</em></h2></div>
+  <div class="map-wrap">
+    <div class="rv">
+      <h3>AASI Multispeciality Hospital</h3>
+      <div class="map-detail"><div class="map-icon">Address</div><div class="map-detail-text"><strong>Address</strong><span>Ramanathapuram (Ramnad), Tamil Nadu, India - the largest private hospital in the district.</span></div></div>
+      <div class="map-detail"><div class="map-icon">Call</div><div class="map-detail-text"><strong>Emergency &amp; Appointments</strong><span>04567 232301 &nbsp;|&nbsp; 78670 86208</span></div></div>
+      <div class="map-detail"><div class="map-icon">Hours</div><div class="map-detail-text"><strong>Hours</strong><span>Emergency: 24 Hours, 7 Days a Week<br>OPD: 9:00 AM - 6:00 PM (Mon-Sat)</span></div></div>
+      <div class="map-detail"><div class="map-icon">Travel</div><div class="map-detail-text"><strong>Getting Here</strong><span>Centrally located in Ramnad town. Ambulance service available. Free parking on premises.</span></div></div>
+      <div class="map-cta">
+        <a href="https://maps.google.com/?q=AASI+Multispeciality+Hospital+Ramanathapuram" target="_blank" rel="noopener noreferrer" class="btn-p" style="font-size:.86rem;padding:12px 22px">Open in Google Maps</a>
+        <a href="tel:04567232301" class="btn-p" style="font-size:.86rem;padding:12px 22px;background:linear-gradient(135deg,var(--em3),var(--em))">Call for Directions</a>
+      </div>
+    </div>
+    <div class="map-frame rv s2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31720.14!2d78.8301!3d9.3764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c7b01f6b7c67%3A0x4b8e16e8b91b7ef6!2sRamanathapuram%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="AASI Hospital Location"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="c-inner rv">
+    <div class="c-badge">Available 24/7</div>
+    <h2 class="c-title">Your Health is Our<br><em style="font-style:italic;color:var(--glow)">Priority</em></h2>
+    <p class="c-sub">Round-the-clock emergency services, expert specialists, and compassionate care - always here when you need us.</p>
+    <div class="c-acts">
+      <a href="#" onclick="openBooking();return false;" class="btn-p">Book Appointment</a>
+      <a href="tel:04567232301" class="btn-g">Call 04567 232301</a>
+      <a href="tel:7867086208" class="btn-g">Call 78670 86208</a>
+    </div>
+    <div class="c-info">
+      <div class="c-i"><span class="ico">Address</span>Ramanathapuram, Tamil Nadu</div>
+      <div class="c-i"><span class="ico">Hours</span>Emergency: 24/7</div>
+      <div class="c-i"><span class="ico">Care</span>80 Beds &middot; 4 OTs &middot; 30 Critical Care</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+</main>
+<footer>
+  <div class="foot-inner">
+    <div class="f-brand">AASI Multispeciality Hospital</div>
+    <div class="f-div"></div>
+    <div class="f-note">The Largest Private Hospital in Ramnad<br>&copy; 2025 AASI Hospital. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lb" id="lb" onclick="closeLB()">
+  <button class="lb-x" onclick="closeLB()" aria-label="Close image viewer">Close</button>
+  <img class="lb-img" id="lbImg" src="" alt="">
+</div>
+
+<!-- ============ BOOKING MODAL ============ -->
+<div class="mo" id="bookModal" onclick="if(event.target===this)closeBooking()">
+  <div class="modal">
+    <div class="m-head">
+      <button class="m-close" type="button" onclick="closeBooking()" aria-label="Close booking form">Close</button>
+      <h2>Book Appointment</h2>
+      <p>AASI Multispeciality Hospital - Fast &amp; Easy</p>
+    </div>
+    <div class="m-body">
+      <div class="m-prog">
+        <div class="mp-item active" id="mp1"><div class="mp-dot">1</div><div class="mp-lbl">Patient</div></div>
+        <div class="mp-item" id="mp2"><div class="mp-dot">2</div><div class="mp-lbl">Dept</div></div>
+        <div class="mp-item" id="mp3"><div class="mp-dot">3</div><div class="mp-lbl">Schedule</div></div>
+        <div class="mp-item" id="mp4"><div class="mp-dot">4</div><div class="mp-lbl">Confirm</div></div>
+      </div>
+      <!-- Step 1 -->
+      <div class="m-step on" id="ms1">
+        <div class="fg2">
+          <div class="form-group">
+            <label for="b-fname">First Name *</label>
+            <input id="b-fname" type="text" placeholder="First name" autocomplete="given-name" maxlength="40" inputmode="text">
+            <span class="field-error" id="b-fname-err">Enter your first name.</span>
+          </div>
+          <div class="form-group">
+            <label for="b-lname">Last Name</label>
+            <input id="b-lname" type="text" placeholder="Last name" autocomplete="family-name" maxlength="40" inputmode="text">
+          </div>
+        </div>
+        <div class="fg2">
+          <div class="form-group">
+            <label for="b-phone">Phone *</label>
+            <input id="b-phone" type="tel" placeholder="+91 XXXXX XXXXX" autocomplete="tel" inputmode="tel" maxlength="15">
+            <span class="field-help">Use a valid 10-digit mobile number, with or without +91.</span>
+            <span class="field-error" id="b-phone-err">Enter a valid phone number.</span>
+          </div>
+          <div class="form-group">
+            <label for="b-age">Age</label>
+            <input id="b-age" type="number" placeholder="Age" min="0" max="120" inputmode="numeric">
+            <span class="field-error" id="b-age-err">Enter a valid age between 0 and 120.</span>
+          </div>
+        </div>
+        <div class="fg2">
+          <div class="form-group">
+            <label for="b-email">Email</label>
+            <input id="b-email" type="email" placeholder="optional" autocomplete="email" inputmode="email" maxlength="80">
+            <span class="field-error" id="b-email-err">Enter a valid email address or leave this blank.</span>
+          </div>
+          <div class="form-group"><label for="b-gender">Gender</label><select id="b-gender"><option value="">Select</option><option>Male</option><option>Female</option><option>Other</option></select></div>
+        </div>
+        <div class="m-nav"><div></div><button class="btn-next" onclick="bNext(2)">Next</button></div>
+      </div>
+      <!-- Step 2 -->
+      <div class="m-step" id="ms2">
+        <div class="form-group"><label>Select Department *</label>
+          <div class="dept-chips">
+            <div class="dchip" onclick="selDept(this,'Cardiology')">Cardiology</div>
+            <div class="dchip" onclick="selDept(this,'Neurology')">Neurology</div>
+            <div class="dchip" onclick="selDept(this,'Orthopaedics')">Orthopaedics</div>
+            <div class="dchip" onclick="selDept(this,'General Medicine')">General Medicine</div>
+            <div class="dchip" onclick="selDept(this,'Nephrology')">Nephrology</div>
+            <div class="dchip" onclick="selDept(this,'Pulmonology')">Pulmonology</div>
+            <div class="dchip" onclick="selDept(this,'Gastroenterology')">Gastro</div>
+            <div class="dchip" onclick="selDept(this,'OBG')">OBG</div>
+            <div class="dchip" onclick="selDept(this,'Paediatrics')">Paediatrics</div>
+            <div class="dchip" onclick="selDept(this,'Urology')">Urology</div>
+            <div class="dchip" onclick="selDept(this,'Ophthalmology')">Ophthalmology</div>
+            <div class="dchip" onclick="selDept(this,'ENT')">ENT</div>
+            <div class="dchip" onclick="selDept(this,'Dental')">Dental</div>
+            <div class="dchip" onclick="selDept(this,'General Surgery')">Surgery</div>
+            <div class="dchip" onclick="selDept(this,'Psychiatry')">Psychiatry</div>
+            <div class="dchip" onclick="selDept(this,'Physiotherapy')">Physio</div>
+          </div>
+        </div>
+        <div class="form-group"><label>Symptoms / Reason</label><textarea id="b-sym" placeholder="Brief description..."></textarea></div>
+        <div class="m-nav"><button class="btn-back" onclick="bPrev(1)">Back</button><button class="btn-next" onclick="bNext(3)">Next</button></div>
+      </div>
+      <!-- Step 3 -->
+      <div class="m-step" id="ms3">
+        <div class="fg2">
+          <div class="form-group"><label>Date *</label><input id="b-date" type="date"></div>
+          <div class="form-group"><label>Visit Type</label><select id="b-vtype"><option>In-Person Consultation</option><option>Follow-up</option><option>Health Check-up</option><option>Emergency</option></select></div>
+        </div>
+        <div class="form-group"><label>Time Slot *</label>
+          <div class="tslots">
+            <div class="ts" onclick="selTime(this,'9:00 AM')">9:00 AM</div>
+            <div class="ts" onclick="selTime(this,'10:00 AM')">10:00 AM</div>
+            <div class="ts" onclick="selTime(this,'11:00 AM')">11:00 AM</div>
+            <div class="ts" onclick="selTime(this,'12:00 PM')">12:00 PM</div>
+            <div class="ts" onclick="selTime(this,'2:00 PM')">2:00 PM</div>
+            <div class="ts" onclick="selTime(this,'3:00 PM')">3:00 PM</div>
+            <div class="ts" onclick="selTime(this,'4:00 PM')">4:00 PM</div>
+            <div class="ts" onclick="selTime(this,'5:00 PM')">5:00 PM</div>
+          </div>
+        </div>
+        <div class="m-nav"><button class="btn-back" onclick="bPrev(2)">Back</button><button class="btn-next" onclick="bNext(4)">Review</button></div>
+      </div>
+      <!-- Step 4 -->
+      <div class="m-step" id="ms4">
+        <div id="ms4-confirm">
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;color:var(--em);margin-bottom:14px">Review Your Appointment</div>
+          <div class="appt-sum" id="bSummary"></div>
+          <p style="margin-top:16px;font-size:.82rem;color:var(--muted);line-height:1.65">Our team will call <strong style="color:var(--em)">04567 232301</strong> within 2 hours to confirm.</p>
+          <div class="m-nav"><button class="btn-back" onclick="bPrev(3)">Back</button><button class="btn-next" onclick="bConfirm()">Confirm</button></div>
+        </div>
+        <div id="ms4-success" style="display:none">
+          <div class="success-wrap">
+            <div class="s-tick">OK</div>
+            <h3>Appointment Confirmed!</h3>
+            <p>Thank you! Our team will call you shortly to confirm your appointment at AASI Multispeciality Hospital.</p>
+            <div class="appt-sum" id="bSuccessSummary" style="margin-top:16px"></div>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px">
+              <a href="tel:04567232301" class="btn-p" style="font-size:.85rem;padding:11px 22px">Call 04567 232301</a>
+              <button class="btn-back" onclick="closeBooking()">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CHATBOX ============ -->
+<button class="chat-btn" id="chatBtn" onclick="toggleChat()" title="Chat with us" aria-label="Open chat">Chat</button>
+<div class="chatbox" id="chatbox">
+  <div class="chat-head">
+    <div class="chat-avatar">AASI</div>
+    <div class="chat-head-info"><strong>AASI Support</strong><span>Online - Typically replies instantly</span></div>
+    <button class="chat-close" onclick="toggleChat()" aria-label="Close chat">Close</button>
+  </div>
+  <div class="chat-msgs" id="chatMsgs"></div>
+  <div class="chat-quick" id="chatQuick">
+    <div class="qbtn" onclick="quickMsg('Book an appointment')">Book Appointment</div>
+    <div class="qbtn" onclick="quickMsg('Emergency services')">Emergency</div>
+    <div class="qbtn" onclick="quickMsg('What departments do you have?')">Departments</div>
+    <div class="qbtn" onclick="quickMsg('Hospital timings')">Timings</div>
+    <div class="qbtn" onclick="quickMsg('How to reach the hospital?')">Location</div>
+    <div class="qbtn" onclick="quickMsg('Dialysis services')">Dialysis</div>
+  </div>
+  <div class="chat-input-row">
+    <input class="chat-input" id="chatInput" type="text" placeholder="Type your message..." onkeydown="if(event.key==='Enter')sendChat()">
+    <button class="chat-send" onclick="sendChat()" aria-label="Send message">Send</button>
+  </div>
+</div>
+
+<script>
+// Cursor
+const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
+const finePointer=window.matchMedia('(pointer:fine) and (hover:hover)').matches;
+const reducedMotion=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if(finePointer&&!reducedMotion){
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{cur.style.left=(mx=e.clientX)+'px';cur.style.top=(my=e.clientY)+'px';},{passive:true});
+  (function tick(){rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(tick);})();
+  document.querySelectorAll('a,button,.dc,.fc-card,.doct-c,.gi,.cc,.ai,.ts,.dchip,.vc,.qbtn').forEach(el=>{
+    el.addEventListener('mouseenter',()=>ring.classList.add('h'));
+    el.addEventListener('mouseleave',()=>ring.classList.remove('h'));
+  });
+}
+
+// Nav scroll and active state
+const navEl=document.getElementById('nav');
+const secs=['hero','about','facilities','departments','doctors','gallery','map-section','contact'];
+let scrollTicking=false;
+function handleScroll(){
+  navEl.classList.toggle('sc',window.scrollY>60);
+  let active='';
+  secs.forEach(id=>{const el=document.getElementById(id);if(el&&el.getBoundingClientRect().top<=80)active=id;});
+  document.querySelectorAll('.nl').forEach(a=>{const h=a.getAttribute('href');a.classList.toggle('active',h==='#'+active);});
+}
+window.addEventListener('scroll',()=>{
+  if(scrollTicking)return;
+  scrollTicking=true;
+  requestAnimationFrame(()=>{
+    handleScroll();
+    if(!reducedMotion){
+      const y=window.scrollY;
+      document.querySelectorAll('.orb').forEach((o,i)=>o.style.transform=`translateY(${y*(.04+i*.02)}px)`);
+    }
+    scrollTicking=false;
+  });
+},{passive:true});
+handleScroll();
+
+// Mobile menu
+function toggleMenu(){document.getElementById('mobMenu').classList.toggle('open');}
+function closeMenu(){document.getElementById('mobMenu').classList.remove('open');}
+
+// Reveal
+const revObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('ok');revObs.unobserve(e.target);}})  ,{threshold:.08,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.rv,.rl,.rr').forEach(el=>revObs.observe(el));
+
+// Counters
+function animCount(el,target){
+  const dur=1600;let s=0;
+  function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/dur,1);el.textContent=Math.floor((1-Math.pow(1-p,3))*target);if(p<1)requestAnimationFrame(step);else el.textContent=target;}
+  requestAnimationFrame(step);
+}
+const cntObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){animCount(e.target,+e.target.dataset.count);cntObs.unobserve(e.target);}})  ,{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>cntObs.observe(el));
+
+// Lightbox
+function openLB(src,lbl){document.getElementById('lbImg').src=src;document.getElementById('lb').classList.add('on');}
+function closeLB(){document.getElementById('lb').classList.remove('on');}
+
+// Booking
+let bd={};
+function showFieldError(id,msg){
+  const field=document.getElementById(id);
+  const err=document.getElementById(id+'-err');
+  if(field)field.classList.add('err');
+  if(err){
+    if(msg)err.textContent=msg;
+    err.classList.add('show');
+  }
+}
+function clearFieldError(id){
+  const field=document.getElementById(id);
+  const err=document.getElementById(id+'-err');
+  if(field)field.classList.remove('err');
+  if(err)err.classList.remove('show');
+}
+function normalizePhone(value){
+  return value.replace(/[^\d+]/g,'').replace(/(?!^)\+/g,'');
+}
+function validEmail(value){
+  return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(value);
+}
+function validateStepOne(){
+  const first=document.getElementById('b-fname').value.trim();
+  const phoneField=document.getElementById('b-phone');
+  const phoneRaw=phoneField.value.trim();
+  const phoneDigits=phoneRaw.replace(/\D/g,'');
+  const ageValue=document.getElementById('b-age').value.trim();
+  const emailValue=document.getElementById('b-email').value.trim();
+  let firstInvalid=false;
+  let focusTarget=null;
+
+  ['b-fname','b-phone','b-age','b-email'].forEach(clearFieldError);
+
+  if(!first){
+    showFieldError('b-fname','Enter your first name.');
+    firstInvalid=true;
+    focusTarget=focusTarget||document.getElementById('b-fname');
+  }
+
+  if(phoneDigits.length<10||phoneDigits.length>12){
+    showFieldError('b-phone','Enter a valid 10-digit mobile number, with or without +91.');
+    focusTarget=focusTarget||phoneField;
+  }
+
+  if(ageValue){
+    const ageNumber=Number(ageValue);
+    if(Number.isNaN(ageNumber)||ageNumber<0||ageNumber>120){
+      showFieldError('b-age','Enter a valid age between 0 and 120.');
+      focusTarget=focusTarget||document.getElementById('b-age');
+    }
+  }
+
+  if(emailValue&&!validEmail(emailValue)){
+    showFieldError('b-email','Enter a valid email address or leave this blank.');
+    focusTarget=focusTarget||document.getElementById('b-email');
+  }
+
+  if(focusTarget){
+    focusTarget.focus();
+    return false;
+  }
+
+  bd.name=(first+(document.getElementById('b-lname').value.trim()?' '+document.getElementById('b-lname').value.trim():'')).trim();
+  bd.phone=phoneRaw;
+  bd.age=ageValue;
+  bd.gender=document.getElementById('b-gender').value;
+  bd.email=emailValue;
+  return !firstInvalid;
+}
+function openBooking(){
+  document.getElementById('bookModal').classList.add('on');
+  document.body.style.overflow='hidden';
+  const t=new Date().toISOString().split('T')[0];
+  document.getElementById('b-date').min=t;
+  if(!document.getElementById('b-date').value)document.getElementById('b-date').value=t;
+  ['b-fname','b-phone','b-age','b-email'].forEach(clearFieldError);
+  // reset success view
+  document.getElementById('ms4-confirm').style.display='';
+  document.getElementById('ms4-success').style.display='none';
+}
+function closeBooking(){document.getElementById('bookModal').classList.remove('on');document.body.style.overflow='';}
+function goMS(n){
+  for(let i=1;i<=4;i++){
+    document.getElementById('ms'+i).classList.toggle('on',i===n);
+    const mp=document.getElementById('mp'+i);
+    mp.classList.remove('active','done');
+    if(i===n)mp.classList.add('active');
+    else if(i<n)mp.classList.add('done');
+    if(i<n)mp.querySelector('.mp-dot').textContent='OK';
+    else if(i>=n)mp.querySelector('.mp-dot').textContent=i;
+  }
+}
+function bNext(n){
+  if(n===2){
+    if(!validateStepOne())return;
+  }
+  if(n===3&&!bd.dept){alert('Please select a department.');return;}
+  if(n===4){
+    if(!document.getElementById('b-date').value){alert('Please select a date.');return;}
+    if(!bd.time){alert('Please select a time slot.');return;}
+    bd.date=document.getElementById('b-date').value;
+    bd.vtype=document.getElementById('b-vtype').value;
+    const fd=new Date(bd.date).toLocaleDateString('en-IN',{weekday:'short',year:'numeric',month:'short',day:'numeric'});
+    document.getElementById('bSummary').innerHTML=`<div class="arow"><span>Patient</span><span>${bd.name}</span></div><div class="arow"><span>Phone</span><span>${bd.phone}</span></div><div class="arow"><span>Department</span><span>${bd.dept}</span></div><div class="arow"><span>Date</span><span>${fd}</span></div><div class="arow"><span>Time</span><span>${bd.time}</span></div><div class="arow"><span>Type</span><span>${bd.vtype}</span></div>`;
+  }
+  goMS(n);
+}
+function bPrev(n){goMS(n);}
+function selDept(el,d){document.querySelectorAll('.dchip').forEach(c=>c.classList.remove('sel'));el.classList.add('sel');bd.dept=d;}
+function selTime(el,t){document.querySelectorAll('.ts').forEach(x=>x.classList.remove('sel'));el.classList.add('sel');bd.time=t;}
+document.getElementById('b-phone').addEventListener('input',e=>{
+  e.target.value=normalizePhone(e.target.value).slice(0,15);
+  clearFieldError('b-phone');
+});
+document.getElementById('b-fname').addEventListener('input',()=>clearFieldError('b-fname'));
+document.getElementById('b-age').addEventListener('input',()=>clearFieldError('b-age'));
+document.getElementById('b-email').addEventListener('input',()=>clearFieldError('b-email'));
+function bConfirm(){
+  const fd=new Date(bd.date).toLocaleDateString('en-IN',{weekday:'short',year:'numeric',month:'short',day:'numeric'});
+  document.getElementById('bSuccessSummary').innerHTML=`<div class="arow"><span>Patient</span><span>${bd.name}</span></div><div class="arow"><span>Department</span><span>${bd.dept}</span></div><div class="arow"><span>Date &amp; Time</span><span>${fd}, ${bd.time}</span></div>`;
+  document.getElementById('ms4-confirm').style.display='none';
+  document.getElementById('ms4-success').style.display='block';
+  for(let i=1;i<=4;i++){const mp=document.getElementById('mp'+i);mp.classList.remove('active');mp.classList.add('done');mp.querySelector('.mp-dot').textContent='OK';}
+}
+
+// Chatbox
+const chatReplies={
+  'book': 'To book an appointment, click the Book Appointment button in the navigation bar or call us at 04567 232301.',
+  'emergency': 'For emergencies, call immediately: 04567 232301 or 78670 86208. We are available 24/7.',
+  'department': 'We have 16+ departments including Cardiology, Neurology, Orthopaedics, Nephrology, OBG, Paediatrics, ENT, Dental, and more.',
+  'timing': 'Emergency services: 24 hours, 7 days. OPD timings: 9:00 AM - 6:00 PM (Monday to Saturday).',
+  'location': 'We are located in Ramanathapuram (Ramnad), Tamil Nadu. Click "Location" in the menu for the map and directions.',
+  'dialysis': 'We have 4 dedicated dialysis units. Please call 04567 232301 to schedule a dialysis session.',
+  'icu': 'Our ICU has 7 beds with full monitoring. CCU has 7 beds with ventilators. NICU has 4 beds for neonates.',
+  'bed': 'We have 80 beds total: 20 general ward, 15 non-AC, 15 AC, 4 deluxe, 12 twin-sharing, 24 ICU, 4 dialysis, 6 casualty.',
+  'pharmacy': 'Our pharmacy is open 24 hours a day, 7 days a week.',
+  'default': 'Thank you for reaching out to AASI Multispeciality Hospital. For medical emergencies call 04567 232301. For appointments, use the Book Appointment button. How else can I help you?'
+};
+let chatOpen=false;
+function toggleChat(){
+  chatOpen=!chatOpen;
+  document.getElementById('chatbox').classList.toggle('on',chatOpen);
+  if(chatOpen&&document.getElementById('chatMsgs').children.length===0){
+    setTimeout(()=>addMsg('bot','Hello! Welcome to AASI Multispeciality Hospital. How can I help you today?'),300);
+  }
+}
+function addMsg(type,text){
+  const msgs=document.getElementById('chatMsgs');
+  const d=document.createElement('div');
+  d.className='msg '+type;
+  d.textContent=text;
+  msgs.appendChild(d);
+  msgs.scrollTop=msgs.scrollHeight;
+}
+function getReply(msg){
+  const m=msg.toLowerCase();
+  if(m.includes('book')||m.includes('appoint'))return chatReplies.book;
+  if(m.includes('emerg')||m.includes('urgent'))return chatReplies.emergency;
+  if(m.includes('dept')||m.includes('department')||m.includes('special'))return chatReplies.department;
+  if(m.includes('time')||m.includes('hour')||m.includes('timing'))return chatReplies.timing;
+  if(m.includes('location')||m.includes('reach')||m.includes('address')||m.includes('where'))return chatReplies.location;
+  if(m.includes('dialysis'))return chatReplies.dialysis;
+  if(m.includes('icu')||m.includes('ccu')||m.includes('critical'))return chatReplies.icu;
+  if(m.includes('bed')||m.includes('room')||m.includes('ward'))return chatReplies.bed;
+  if(m.includes('pharmacy')||m.includes('medicine'))return chatReplies.pharmacy;
+  return chatReplies.default;
+}
+function sendChat(){
+  const inp=document.getElementById('chatInput');
+  const msg=inp.value.trim();
+  if(!msg)return;
+  addMsg('user',msg);
+  inp.value='';
+  document.getElementById('chatQuick').style.display='none';
+  setTimeout(()=>addMsg('bot',getReply(msg)),700);
+}
+function quickMsg(msg){
+  addMsg('user',msg);
+  document.getElementById('chatQuick').style.display='none';
+  setTimeout(()=>addMsg('bot',getReply(msg)),700);
+}
+
+// Keyboard escape
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeLB();closeBooking();}});
+</script>
+</body>
+</html>
